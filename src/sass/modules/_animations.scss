@@ -1,0 +1,15 @@
+
+.box.normal:hover {
+    cursor: pointer;
+    z-index: 1;
+    // transform: scale(1.1);
+    box-shadow: 0 0 50px 1px rgba(#000, 0.25);
+}
+
+.box.expand {
+    z-index: 1;
+}
+
+.box.expand:hover {
+    cursor: default;
+}
