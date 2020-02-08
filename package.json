@@ -1,16 +1,13 @@
 {
+  "name": "zoomingboxes",
   "author": "Tomas Töws",
+  "scripts": {
+    "build": "parcel build src/index.html",
+    "build-and-deploy": "rm -r -f -v dist/ && parcel build src/index.html && node rewriteURLs.js && ./deploy.sh"
+  },
   "devDependencies": {
-    "@babel/core": "^7.2.2",
-    "@babel/preset-env": "^7.2.3",
-    "babel-core": "^6.26.3",
-    "babel-polyfill": "^6.26.0",
-    "browser-sync": "*",
-    "gulp": "*",
-    "gulp-autoprefixer": "*",
-    "gulp-babel": "^8.0.0",
-    "gulp-clean-css": "*",
-    "gulp-sass": "*",
-    "gulp-uglify": "*"
+    "parcel-bundler": "^1.12.4",
+    "replace-in-file": "^4.2.0",
+    "sass": "^1.23.3"
   }
 }
