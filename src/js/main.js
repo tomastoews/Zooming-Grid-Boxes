@@ -20,7 +20,7 @@ function expandBox(e) {
         element.style.marginLeft = `-${positionX}px`;
         element.style.marginTop = `-${positionY}px`;
 
-        // Make the with and height of the window
+        // Make the width and height of the window
         element.style.width = '100vw';
         element.style.height = '100vh';
 
